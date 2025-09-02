@@ -1,60 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>My profile</title>
-    </head>
-    <body>
-        <h1>My personal information</h1>
-        <h2>Name</h2>
-            <p>Hugh Jones</p>
-        <h2>Age</h2>
-            <p>19</p>
-        <h2>place of residence</h2>
-             <select id="place1" name="place1">
-                <option value="berg">berg</option>
-                <option value="lange">lange</option>
-                <option value="abeelse">abeelse</option>
-             </select>
-             <select id="place2" name="place2">
-                <option value="straat">straat</option>
-                <option value="weg">weg</option>
-                <option value="laan">laan</option>
-             </select>  
-             <select name="place3" id="place3">
-                <option value="13">13</option>
-                <option value="5">5</option>
-                <option value="7">7</option>
-             </select>
-             <button type="button" onclick="myFunction()">Submit</button>
-             <p id="demo"></p>
 
-             <script>
-                function myFunction() {
-                  let x = document.getElementById("place1").value;
-                  let y = document.getElementById("place2").value;
-                  let z = document.getElementById("place3").value;
-                  let text;
-                  if (x == "abeelse"){
-                    if (y == "weg"){
-                        if (z == 5){
-                            text = "correct"
-                        } else {
-                            text = "incorrect"
-                        }
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="nav">
+        <a target="_blank" href="https://hz.nl/"><img src="images\HZlogo.png" width="40" height="40"></a>
+    </div>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a class="active" href="profile.html">Profile</a>
+        <a href="#contact">Dashboard</a>
+        <a href="#about">FAQ</a>
+        <a href="#about">Blog</a>
+    </div>
+
+    <h1>My personal information</h1>
+    <h2>Name</h2>
+    <p>Hugh Jones</p>
+    <h2>Age</h2>
+    <p>19</p>
+    <h2>place of residence</h2>
+    <select id="place1" name="place1">
+        <option value="berg">berg</option>
+        <option value="lange">lange</option>
+        <option value="abeelse">abeelse</option>
+    </select>
+    <select id="place2" name="place2">
+        <option value="straat">straat</option>
+        <option value="weg">weg</option>
+        <option value="laan">laan</option>
+    </select>
+    <select name="place3" id="place3">
+        <option value="13">13</option>
+        <option value="5">5</option>
+        <option value="7">7</option>
+    </select>
+    <button type="button" onclick="myFunction()">Submit</button>
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            let x = document.getElementById("place1").value;
+            let y = document.getElementById("place2").value;
+            let z = document.getElementById("place3").value;
+            let text;
+            if (x == "abeelse") {
+                if (y == "weg") {
+                    if (z == 5) {
+                        text = "correct"
                     } else {
                         text = "incorrect"
                     }
-                  } else {
+                } else {
                     text = "incorrect"
-                  }
-                  document.getElementById("demo").innerHTML = text;
                 }
-                </script>
-            <h2>Hobbies</h2>
-                <p>Gamin'</p>
-        
-    </body>
+            } else {
+                text = "incorrect"
+            }
+            document.getElementById("demo").innerHTML = text;
+        }
+    </script>
+    <h2>Hobbies</h2>
+    <p>Gamin'</p>
+
+</body>
+
 </html>
