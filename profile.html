@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <div class="nav">
+    <div class="navimg">
         <a target="_blank" href="https://hz.nl/"><img src="images\HZlogo.png" width="40" height="40"></a>
     </div>
     <div class="topnav">
@@ -24,47 +24,6 @@
     <p>Hugh Jones</p>
     <h2>Age</h2>
     <p>19</p>
-    <h2>place of residence</h2>
-    <select id="place1" name="place1">
-        <option value="berg">berg</option>
-        <option value="lange">lange</option>
-        <option value="abeelse">abeelse</option>
-    </select>
-    <select id="place2" name="place2">
-        <option value="straat">straat</option>
-        <option value="weg">weg</option>
-        <option value="laan">laan</option>
-    </select>
-    <select name="place3" id="place3">
-        <option value="13">13</option>
-        <option value="5">5</option>
-        <option value="7">7</option>
-    </select>
-    <button type="button" onclick="myFunction()">Submit</button>
-    <p id="demo"></p>
-
-    <script>
-        function myFunction() {
-            let x = document.getElementById("place1").value;
-            let y = document.getElementById("place2").value;
-            let z = document.getElementById("place3").value;
-            let text;
-            if (x == "abeelse") {
-                if (y == "weg") {
-                    if (z == 5) {
-                        text = "correct"
-                    } else {
-                        text = "incorrect"
-                    }
-                } else {
-                    text = "incorrect"
-                }
-            } else {
-                text = "incorrect"
-            }
-            document.getElementById("demo").innerHTML = text;
-        }
-    </script>
     <h2>Hobbies</h2>
     <p>Gamin'</p>
 
